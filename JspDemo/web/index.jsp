@@ -29,11 +29,12 @@
                 <div class="col-md-2"></div>
 
                 <div class="col-md-6 jumbotron">
-                    <h3 align="center">Tech selection page</h3>
+                    <h3>Tech selection page</h3>
 
                     <form method="POST" class="form-horizontal">
-                        Select programming language:
-                        <select name="proglang" size="1" class="form-control">
+                       
+                        <select name="proglang"  class="form-control">
+                            <caption > Select programming language:</caption>
                             <option value="c">C</option>
                             <option value="cpp">C++</option>
                             <option value="php">PHP</option>
