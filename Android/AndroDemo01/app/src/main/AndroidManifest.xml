@@ -23,6 +23,11 @@
                         android:name="android.support.PARENT_ACTIVITY"
                         android:value=".MainActivity" />
         </activity>
+        
     </application>
+
+    <uses-feature android:name="android.hardware.camera.any"
+        android:required="false" />
+
 
 </manifest>

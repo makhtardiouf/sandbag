@@ -8,7 +8,11 @@ import java.util.*;
  *
  * @author makhtar
  */
-public class Demo {
+public class Demo implements Runnable {
+
+    public void run() {
+            System.out.println("Running a thread...");
+    }
 
     // Reverse a string
     static String reverse(String s) {
@@ -26,10 +30,10 @@ public class Demo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        try {
         String msg = "Hello World!";
         System.out.println(msg + " -> " + reverse(msg));
 
-       // Map<Interger, String> m;
         StringBuilder sb = new StringBuilder();
 
         // (Obsolete) Vector is synchronized on every method, which means there's a 
@@ -42,7 +46,7 @@ public class Demo {
         for (int i = 0; i < 10; i++) {
             v.addElement(i * 10);
             v2.add(i * 10);
-            sb.append("Idx" + i + ": " + i * 10 + ": ");
+            sb.append("Id" + i + ": " + i * 10 + " ");
         }
 
         for (int i = 0; i < v2.size(); i++) {
@@ -50,6 +54,12 @@ public class Demo {
         }
         System.out.println();
         System.out.println(sb.toString());
+
+        throw new ClassCastException("Test catch exception");
+        
+    } catch(Exception e) {
+        System.out.printf("Crashed with error: %s", e.getMessage());
+    }
     }
 
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mak's Andro Demo01</string>
+    <string name="app_name">"Mak's Andro Demo01"</string>
     <string name="edit_message">Enter a message</string>
     <string name="btSend">Send</string>
 </resources>

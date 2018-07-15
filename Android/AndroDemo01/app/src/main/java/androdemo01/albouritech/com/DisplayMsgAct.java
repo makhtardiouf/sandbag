@@ -11,7 +11,7 @@ public class DisplayMsgAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_msg);
-        this.setTitle("A message was received");
+        this.setTitle("Message reception");
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
@@ -20,5 +20,6 @@ public class DisplayMsgAct extends AppCompatActivity {
         // Capture the layout's TextView and set the string as its text
         TextView txtView = findViewById(R.id.textView);
         txtView.setText(msg);
+
     }
 }
